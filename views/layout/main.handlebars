@@ -19,19 +19,19 @@
     <a href="/dashboard">DashBoard</a>
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
-    <a href="/login">Login</a>
+    <a href="../login.handlebars">Login</a>
     {{/if}}
   </nav>
   <main>
     <aside>
-      <h2>Enjoy the galleries!</h2>
+      <h2>Tech Blog</h2>
     </aside>
-    <div class="gallery">
+    <div class="blog">
       {{{body}}}
     </div>
   </main>
   {{#if loggedIn}}
-  <script src="/js/logout.js"></script>
+  <script src="../../public/js/logout.js"></script>
   {{/if}}
 </body>
 
