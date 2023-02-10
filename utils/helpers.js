@@ -1,7 +1,9 @@
 module.exports = {
   format_date: (date) => {
-    return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${
-      new Date(date).getFullYear()
-    }`;
+    const M = new Date(date).getMonth() + 1;
+    const DD = new Date(date).getDate();
+    const YYYY = new Date(date).getFullYear();
+
+    return `${M}/${DD}/${YYYY}`;
   },
 };

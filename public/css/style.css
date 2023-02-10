@@ -31,7 +31,7 @@ a:visited {
 header {
   padding: 40px;
   text-align: center;
-  background: var(--primary);
+  background: orange;
   color: var(--light);
 }
 
@@ -144,16 +144,6 @@ img {
   font-weight: bold;
 }
 
-.gallery-name {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-shadow: 2px 2px 5px var(--secondary);
-  border: 10px groove var(--light);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 100px;
-  padding-left: 100px;
-}
 
 /* LAYOUT */
 .container {

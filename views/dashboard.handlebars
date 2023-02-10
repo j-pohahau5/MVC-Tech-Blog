@@ -1,0 +1,38 @@
+<div class="row align-center mb-5" id="dashboard">
+  <div class="col-md-6">
+    <h2> {{user.username}}</h2>
+  </div>
+ {{#each blogs}}
+  <div>
+    <div class="col-md-6">
+      <h2> {{title}}</h2>
+    </div>
+    <div class="col-md-6">
+      <h3>{{content}}</h3>
+    </div>
+    <div class="col-md-6">
+      <h3>{{date_created}}</h3>
+    </div>
+    <div>
+        <button id={{id}} class="btn btn-primary delete-btn" type="submit">Delete Project</button>
+    </div>
+  </div>
+{{/each}}
+  <div>
+   <form class="form" id="new-blog-form">
+      <div class="form-group">
+        <label for="title">Blog Title:</label>
+        <input class="form-input" type="text" id="title" />
+      </div>
+      <div class="form-group">
+        <label for="content">Blog Content:</label>
+        <input class="form-input" type="text" id="content" />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Create Blog</button>
+      </div>
+   </form>
+  </div>
+</div>
+<script src="./js/blog.js"></script>
+<script src="./js/delete.js"></script>
