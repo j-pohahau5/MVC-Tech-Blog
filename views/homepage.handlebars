@@ -2,7 +2,7 @@
 {{#each blogs}}
 <div class="container column align-center mb-5">
   <div class="row col-md-6">
-    <h2> {{title}}</h2>
+    <h2>{{id}} {{title}}</h2>
   </div>
   <div class="row col-md-6">
     <h4>{{user_id}}: {{user.username}}</h4>
@@ -13,5 +13,24 @@
   <div class="row col-md-6">
     <h3>{{content}}</h3>
   </div>
+  <div>
+    <button id={{id}} class="btn btn-primary delete-btn" type="submit">Delete Project</button>
+  </div>
 </div>
 {{/each}}
+  <div class="container column align-center mb-5">
+   <form class="form" id="new-blog-form">
+      <div class="form-group">
+        <label for="title">Blog Title:</label>
+        <input class="form-input" type="text" id="title" />
+      </div>
+      <div class="form-group">
+        <label for="content">Blog Content:</label>
+        <input class="form-input" type="text" id="content" />
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Create Blog</button>
+      </div>
+   </form>
+  </div>
+<script src="/js/blog.js"></script>
